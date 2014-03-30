@@ -1,0 +1,524 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FDB7934F-9623-40D6-B0C7-E9BD8917EA51}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NosSimulator</RootNamespace>
+    <AssemblyName>NosSimulator</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="dbEq.js" />
+    <Content Include="dbRune.js" />
+    <Content Include="dbSp.js" />
+    <Content Include="eq.css" />
+    <Content Include="eq.html" />
+    <Content Include="eq.js" />
+    <Content Include="favicon.ico" />
+    <Content Include="home.css" />
+    <Content Include="imgEquip\Arco\1.jpg" />
+    <Content Include="imgEquip\Arco\10.jpg" />
+    <Content Include="imgEquip\Arco\11.jpg" />
+    <Content Include="imgEquip\Arco\12.jpg" />
+    <Content Include="imgEquip\Arco\13.jpg" />
+    <Content Include="imgEquip\Arco\14.jpg" />
+    <Content Include="imgEquip\Arco\15.jpg" />
+    <Content Include="imgEquip\Arco\16.jpg" />
+    <Content Include="imgEquip\Arco\17.jpg" />
+    <Content Include="imgEquip\Arco\18.jpg" />
+    <Content Include="imgEquip\Arco\19.jpg" />
+    <Content Include="imgEquip\Arco\2.jpg" />
+    <Content Include="imgEquip\Arco\20.jpg" />
+    <Content Include="imgEquip\Arco\21.jpg" />
+    <Content Include="imgEquip\Arco\22.jpg" />
+    <Content Include="imgEquip\Arco\23.jpg" />
+    <Content Include="imgEquip\Arco\24.jpg" />
+    <Content Include="imgEquip\Arco\25.jpg" />
+    <Content Include="imgEquip\Arco\26.jpg" />
+    <Content Include="imgEquip\Arco\27.jpg" />
+    <Content Include="imgEquip\Arco\28.jpg" />
+    <Content Include="imgEquip\Arco\29.jpg" />
+    <Content Include="imgEquip\Arco\3.jpg" />
+    <Content Include="imgEquip\Arco\30.jpg" />
+    <Content Include="imgEquip\Arco\31.jpg" />
+    <Content Include="imgEquip\Arco\32.jpg" />
+    <Content Include="imgEquip\Arco\33.jpg" />
+    <Content Include="imgEquip\Arco\34.jpg" />
+    <Content Include="imgEquip\Arco\35.jpg" />
+    <Content Include="imgEquip\Arco\36.jpg" />
+    <Content Include="imgEquip\Arco\37.jpg" />
+    <Content Include="imgEquip\Arco\38.jpg" />
+    <Content Include="imgEquip\Arco\4.jpg" />
+    <Content Include="imgEquip\Arco\5.jpg" />
+    <Content Include="imgEquip\Arco\6.jpg" />
+    <Content Include="imgEquip\Arco\7.jpg" />
+    <Content Include="imgEquip\Arco\8.jpg" />
+    <Content Include="imgEquip\Arco\9.jpg" />
+    <Content Include="imgEquip\Balestra\1.jpg" />
+    <Content Include="imgEquip\Balestra\10.jpg" />
+    <Content Include="imgEquip\Balestra\11.jpg" />
+    <Content Include="imgEquip\Balestra\12.jpg" />
+    <Content Include="imgEquip\Balestra\13.jpg" />
+    <Content Include="imgEquip\Balestra\14.jpg" />
+    <Content Include="imgEquip\Balestra\15.jpg" />
+    <Content Include="imgEquip\Balestra\16.jpg" />
+    <Content Include="imgEquip\Balestra\17.jpg" />
+    <Content Include="imgEquip\Balestra\18.jpg" />
+    <Content Include="imgEquip\Balestra\19.jpg" />
+    <Content Include="imgEquip\Balestra\2.jpg" />
+    <Content Include="imgEquip\Balestra\20.jpg" />
+    <Content Include="imgEquip\Balestra\21.jpg" />
+    <Content Include="imgEquip\Balestra\22.jpg" />
+    <Content Include="imgEquip\Balestra\3.jpg" />
+    <Content Include="imgEquip\Balestra\4.jpg" />
+    <Content Include="imgEquip\Balestra\5.jpg" />
+    <Content Include="imgEquip\Balestra\6.jpg" />
+    <Content Include="imgEquip\Balestra\7.jpg" />
+    <Content Include="imgEquip\Balestra\8.jpg" />
+    <Content Include="imgEquip\Balestra\9.jpg" />
+    <Content Include="imgEquip\closeList.png" />
+    <Content Include="imgEquip\Corazza\1.jpg" />
+    <Content Include="imgEquip\Corazza\10.jpg" />
+    <Content Include="imgEquip\Corazza\11.jpg" />
+    <Content Include="imgEquip\Corazza\12.jpg" />
+    <Content Include="imgEquip\Corazza\13.jpg" />
+    <Content Include="imgEquip\Corazza\14.jpg" />
+    <Content Include="imgEquip\Corazza\15.jpg" />
+    <Content Include="imgEquip\Corazza\16.jpg" />
+    <Content Include="imgEquip\Corazza\17.jpg" />
+    <Content Include="imgEquip\Corazza\18.jpg" />
+    <Content Include="imgEquip\Corazza\19.jpg" />
+    <Content Include="imgEquip\Corazza\2.jpg" />
+    <Content Include="imgEquip\Corazza\20.jpg" />
+    <Content Include="imgEquip\Corazza\21.jpg" />
+    <Content Include="imgEquip\Corazza\22.jpg" />
+    <Content Include="imgEquip\Corazza\23.jpg" />
+    <Content Include="imgEquip\Corazza\24.jpg" />
+    <Content Include="imgEquip\Corazza\25.jpg" />
+    <Content Include="imgEquip\Corazza\26.jpg" />
+    <Content Include="imgEquip\Corazza\27.jpg" />
+    <Content Include="imgEquip\Corazza\28.jpg" />
+    <Content Include="imgEquip\Corazza\29.jpg" />
+    <Content Include="imgEquip\Corazza\3.jpg" />
+    <Content Include="imgEquip\Corazza\30.jpg" />
+    <Content Include="imgEquip\Corazza\31.jpg" />
+    <Content Include="imgEquip\Corazza\4.jpg" />
+    <Content Include="imgEquip\Corazza\5.jpg" />
+    <Content Include="imgEquip\Corazza\6.jpg" />
+    <Content Include="imgEquip\Corazza\7.jpg" />
+    <Content Include="imgEquip\Corazza\8.jpg" />
+    <Content Include="imgEquip\Corazza\9.jpg" />
+    <Content Include="imgEquip\dx.png" />
+    <Content Include="imgEquip\dxH.png" />
+    <Content Include="imgEquip\equip.jpg" />
+    <Content Include="imgEquip\equiphover.jpg" />
+    <Content Include="imgEquip\gemma1.jpg" />
+    <Content Include="imgEquip\gemma2.jpg" />
+    <Content Include="imgEquip\gemma3.jpg" />
+    <Content Include="imgEquip\oro.jpg" />
+    <Content Include="imgEquip\Pistola\1.jpg" />
+    <Content Include="imgEquip\Pistola\10.jpg" />
+    <Content Include="imgEquip\Pistola\11.jpg" />
+    <Content Include="imgEquip\Pistola\12.jpg" />
+    <Content Include="imgEquip\Pistola\13.jpg" />
+    <Content Include="imgEquip\Pistola\14.jpg" />
+    <Content Include="imgEquip\Pistola\15.jpg" />
+    <Content Include="imgEquip\Pistola\16.jpg" />
+    <Content Include="imgEquip\Pistola\17.jpg" />
+    <Content Include="imgEquip\Pistola\18.jpg" />
+    <Content Include="imgEquip\Pistola\19.jpg" />
+    <Content Include="imgEquip\Pistola\2.jpg" />
+    <Content Include="imgEquip\Pistola\20.jpg" />
+    <Content Include="imgEquip\Pistola\21.jpg" />
+    <Content Include="imgEquip\Pistola\22.jpg" />
+    <Content Include="imgEquip\Pistola\3.jpg" />
+    <Content Include="imgEquip\Pistola\4.jpg" />
+    <Content Include="imgEquip\Pistola\5.jpg" />
+    <Content Include="imgEquip\Pistola\6.jpg" />
+    <Content Include="imgEquip\Pistola\7.jpg" />
+    <Content Include="imgEquip\Pistola\8.jpg" />
+    <Content Include="imgEquip\Pistola\9.jpg" />
+    <Content Include="imgEquip\polvere.jpg" />
+    <Content Include="imgEquip\Pugnale\1.jpg" />
+    <Content Include="imgEquip\Pugnale\10.jpg" />
+    <Content Include="imgEquip\Pugnale\11.jpg" />
+    <Content Include="imgEquip\Pugnale\12.jpg" />
+    <Content Include="imgEquip\Pugnale\13.jpg" />
+    <Content Include="imgEquip\Pugnale\14.jpg" />
+    <Content Include="imgEquip\Pugnale\15.jpg" />
+    <Content Include="imgEquip\Pugnale\16.jpg" />
+    <Content Include="imgEquip\Pugnale\17.jpg" />
+    <Content Include="imgEquip\Pugnale\18.jpg" />
+    <Content Include="imgEquip\Pugnale\19.jpg" />
+    <Content Include="imgEquip\Pugnale\2.jpg" />
+    <Content Include="imgEquip\Pugnale\20.jpg" />
+    <Content Include="imgEquip\Pugnale\21.jpg" />
+    <Content Include="imgEquip\Pugnale\22.jpg" />
+    <Content Include="imgEquip\Pugnale\3.jpg" />
+    <Content Include="imgEquip\Pugnale\4.jpg" />
+    <Content Include="imgEquip\Pugnale\5.jpg" />
+    <Content Include="imgEquip\Pugnale\6.jpg" />
+    <Content Include="imgEquip\Pugnale\7.jpg" />
+    <Content Include="imgEquip\Pugnale\8.jpg" />
+    <Content Include="imgEquip\Pugnale\9.jpg" />
+    <Content Include="imgEquip\raro.jpg" />
+    <Content Include="imgEquip\rarohover.jpg" />
+    <Content Include="imgEquip\Scettro\1.jpg" />
+    <Content Include="imgEquip\Scettro\10.jpg" />
+    <Content Include="imgEquip\Scettro\11.jpg" />
+    <Content Include="imgEquip\Scettro\12.jpg" />
+    <Content Include="imgEquip\Scettro\13.jpg" />
+    <Content Include="imgEquip\Scettro\14.jpg" />
+    <Content Include="imgEquip\Scettro\15.jpg" />
+    <Content Include="imgEquip\Scettro\16.jpg" />
+    <Content Include="imgEquip\Scettro\17.jpg" />
+    <Content Include="imgEquip\Scettro\18.jpg" />
+    <Content Include="imgEquip\Scettro\19.jpg" />
+    <Content Include="imgEquip\Scettro\2.jpg" />
+    <Content Include="imgEquip\Scettro\20.jpg" />
+    <Content Include="imgEquip\Scettro\21.jpg" />
+    <Content Include="imgEquip\Scettro\22.jpg" />
+    <Content Include="imgEquip\Scettro\23.jpg" />
+    <Content Include="imgEquip\Scettro\24.jpg" />
+    <Content Include="imgEquip\Scettro\25.jpg" />
+    <Content Include="imgEquip\Scettro\26.jpg" />
+    <Content Include="imgEquip\Scettro\27.jpg" />
+    <Content Include="imgEquip\Scettro\28.jpg" />
+    <Content Include="imgEquip\Scettro\29.jpg" />
+    <Content Include="imgEquip\Scettro\3.jpg" />
+    <Content Include="imgEquip\Scettro\30.jpg" />
+    <Content Include="imgEquip\Scettro\31.jpg" />
+    <Content Include="imgEquip\Scettro\32.jpg" />
+    <Content Include="imgEquip\Scettro\33.jpg" />
+    <Content Include="imgEquip\Scettro\34.jpg" />
+    <Content Include="imgEquip\Scettro\35.jpg" />
+    <Content Include="imgEquip\Scettro\36.jpg" />
+    <Content Include="imgEquip\Scettro\37.jpg" />
+    <Content Include="imgEquip\Scettro\38.jpg" />
+    <Content Include="imgEquip\Scettro\4.jpg" />
+    <Content Include="imgEquip\Scettro\5.jpg" />
+    <Content Include="imgEquip\Scettro\6.jpg" />
+    <Content Include="imgEquip\Scettro\7.jpg" />
+    <Content Include="imgEquip\Scettro\8.jpg" />
+    <Content Include="imgEquip\Scettro\9.jpg" />
+    <Content Include="imgEquip\Spada\1.jpg" />
+    <Content Include="imgEquip\Spada\10.jpg" />
+    <Content Include="imgEquip\Spada\11.jpg" />
+    <Content Include="imgEquip\Spada\12.jpg" />
+    <Content Include="imgEquip\Spada\13.jpg" />
+    <Content Include="imgEquip\Spada\14.jpg" />
+    <Content Include="imgEquip\Spada\15.jpg" />
+    <Content Include="imgEquip\Spada\16.jpg" />
+    <Content Include="imgEquip\Spada\17.jpg" />
+    <Content Include="imgEquip\Spada\18.jpg" />
+    <Content Include="imgEquip\Spada\19.jpg" />
+    <Content Include="imgEquip\Spada\2.jpg" />
+    <Content Include="imgEquip\Spada\20.jpg" />
+    <Content Include="imgEquip\Spada\21.jpg" />
+    <Content Include="imgEquip\Spada\22.jpg" />
+    <Content Include="imgEquip\Spada\23.jpg" />
+    <Content Include="imgEquip\Spada\24.jpg" />
+    <Content Include="imgEquip\Spada\25.jpg" />
+    <Content Include="imgEquip\Spada\26.jpg" />
+    <Content Include="imgEquip\Spada\27.jpg" />
+    <Content Include="imgEquip\Spada\28.jpg" />
+    <Content Include="imgEquip\Spada\29.jpg" />
+    <Content Include="imgEquip\Spada\3.jpg" />
+    <Content Include="imgEquip\Spada\30.jpg" />
+    <Content Include="imgEquip\Spada\31.jpg" />
+    <Content Include="imgEquip\Spada\32.jpg" />
+    <Content Include="imgEquip\Spada\33.jpg" />
+    <Content Include="imgEquip\Spada\34.jpg" />
+    <Content Include="imgEquip\Spada\35.jpg" />
+    <Content Include="imgEquip\Spada\36.jpg" />
+    <Content Include="imgEquip\Spada\37.jpg" />
+    <Content Include="imgEquip\Spada\38.jpg" />
+    <Content Include="imgEquip\Spada\4.jpg" />
+    <Content Include="imgEquip\Spada\5.jpg" />
+    <Content Include="imgEquip\Spada\6.jpg" />
+    <Content Include="imgEquip\Spada\7.jpg" />
+    <Content Include="imgEquip\Spada\8.jpg" />
+    <Content Include="imgEquip\Spada\9.jpg" />
+    <Content Include="imgEquip\sx.png" />
+    <Content Include="imgEquip\sxH.png" />
+    <Content Include="imgEquip\Toga\1.jpg" />
+    <Content Include="imgEquip\Toga\10.jpg" />
+    <Content Include="imgEquip\Toga\11.jpg" />
+    <Content Include="imgEquip\Toga\12.jpg" />
+    <Content Include="imgEquip\Toga\13.jpg" />
+    <Content Include="imgEquip\Toga\14.jpg" />
+    <Content Include="imgEquip\Toga\15.jpg" />
+    <Content Include="imgEquip\Toga\16.jpg" />
+    <Content Include="imgEquip\Toga\17.jpg" />
+    <Content Include="imgEquip\Toga\18.jpg" />
+    <Content Include="imgEquip\Toga\19.jpg" />
+    <Content Include="imgEquip\Toga\2.jpg" />
+    <Content Include="imgEquip\Toga\20.jpg" />
+    <Content Include="imgEquip\Toga\21.jpg" />
+    <Content Include="imgEquip\Toga\22.jpg" />
+    <Content Include="imgEquip\Toga\23.jpg" />
+    <Content Include="imgEquip\Toga\24.jpg" />
+    <Content Include="imgEquip\Toga\25.jpg" />
+    <Content Include="imgEquip\Toga\26.jpg" />
+    <Content Include="imgEquip\Toga\27.jpg" />
+    <Content Include="imgEquip\Toga\28.jpg" />
+    <Content Include="imgEquip\Toga\29.jpg" />
+    <Content Include="imgEquip\Toga\3.jpg" />
+    <Content Include="imgEquip\Toga\30.jpg" />
+    <Content Include="imgEquip\Toga\31.jpg" />
+    <Content Include="imgEquip\Toga\4.jpg" />
+    <Content Include="imgEquip\Toga\5.jpg" />
+    <Content Include="imgEquip\Toga\6.jpg" />
+    <Content Include="imgEquip\Toga\7.jpg" />
+    <Content Include="imgEquip\Toga\8.jpg" />
+    <Content Include="imgEquip\Toga\9.jpg" />
+    <Content Include="imgEquip\Tunica\1.jpg" />
+    <Content Include="imgEquip\Tunica\10.jpg" />
+    <Content Include="imgEquip\Tunica\11.jpg" />
+    <Content Include="imgEquip\Tunica\12.jpg" />
+    <Content Include="imgEquip\Tunica\13.jpg" />
+    <Content Include="imgEquip\Tunica\14.jpg" />
+    <Content Include="imgEquip\Tunica\15.jpg" />
+    <Content Include="imgEquip\Tunica\16.jpg" />
+    <Content Include="imgEquip\Tunica\17.jpg" />
+    <Content Include="imgEquip\Tunica\18.jpg" />
+    <Content Include="imgEquip\Tunica\19.jpg" />
+    <Content Include="imgEquip\Tunica\2.jpg" />
+    <Content Include="imgEquip\Tunica\20.jpg" />
+    <Content Include="imgEquip\Tunica\21.jpg" />
+    <Content Include="imgEquip\Tunica\22.jpg" />
+    <Content Include="imgEquip\Tunica\23.jpg" />
+    <Content Include="imgEquip\Tunica\24.jpg" />
+    <Content Include="imgEquip\Tunica\25.jpg" />
+    <Content Include="imgEquip\Tunica\26.jpg" />
+    <Content Include="imgEquip\Tunica\27.jpg" />
+    <Content Include="imgEquip\Tunica\28.jpg" />
+    <Content Include="imgEquip\Tunica\29.jpg" />
+    <Content Include="imgEquip\Tunica\3.jpg" />
+    <Content Include="imgEquip\Tunica\30.jpg" />
+    <Content Include="imgEquip\Tunica\31.jpg" />
+    <Content Include="imgEquip\Tunica\4.jpg" />
+    <Content Include="imgEquip\Tunica\5.jpg" />
+    <Content Include="imgEquip\Tunica\6.jpg" />
+    <Content Include="imgEquip\Tunica\7.jpg" />
+    <Content Include="imgEquip\Tunica\8.jpg" />
+    <Content Include="imgEquip\Tunica\9.jpg" />
+    <Content Include="imgRune\1.png" />
+    <Content Include="imgRune\10.png" />
+    <Content Include="imgRune\2.png" />
+    <Content Include="imgRune\3.png" />
+    <Content Include="imgRune\4.png" />
+    <Content Include="imgRune\5.png" />
+    <Content Include="imgRune\6.png" />
+    <Content Include="imgRune\7.png" />
+    <Content Include="imgRune\8.png" />
+    <Content Include="imgRune\9.png" />
+    <Content Include="imgRune\arma1.png" />
+    <Content Include="imgRune\arma2.png" />
+    <Content Include="imgRune\arma3.png" />
+    <Content Include="imgRune\arma4.png" />
+    <Content Include="imgRune\arma5.png" />
+    <Content Include="imgRune\armatura1.png" />
+    <Content Include="imgRune\armatura2.png" />
+    <Content Include="imgRune\armatura3.png" />
+    <Content Include="imgRune\armatura4.png" />
+    <Content Include="imgRune\armatura5.png" />
+    <Content Include="imgSp\1.png" />
+    <Content Include="imgSp\10.png" />
+    <Content Include="imgSp\11.png" />
+    <Content Include="imgSp\12.png" />
+    <Content Include="imgSp\13.png" />
+    <Content Include="imgSp\14.png" />
+    <Content Include="imgSp\15.png" />
+    <Content Include="imgSp\16.png" />
+    <Content Include="imgSp\17.png" />
+    <Content Include="imgSp\18.png" />
+    <Content Include="imgSp\19.png" />
+    <Content Include="imgSp\2.png" />
+    <Content Include="imgSp\20.png" />
+    <Content Include="imgSp\21.png" />
+    <Content Include="imgSp\22.png" />
+    <Content Include="imgSp\3.png" />
+    <Content Include="imgSp\4.png" />
+    <Content Include="imgSp\5.png" />
+    <Content Include="imgSp\6.png" />
+    <Content Include="imgSp\7.png" />
+    <Content Include="imgSp\8.png" />
+    <Content Include="imgSp\9.png" />
+    <Content Include="imgSp\blood.jpg" />
+    <Content Include="imgSp\dark.jpg" />
+    <Content Include="imgSp\fire.jpg" />
+    <Content Include="imgSp\gold.jpg" />
+    <Content Include="imgSp\greensoul.jpg" />
+    <Content Include="imgSp\heart.jpg" />
+    <Content Include="imgSp\imgbig1.png" />
+    <Content Include="imgSp\imgbig10.png" />
+    <Content Include="imgSp\imgbig11.png" />
+    <Content Include="imgSp\imgbig12.png" />
+    <Content Include="imgSp\imgbig13.png" />
+    <Content Include="imgSp\imgbig14.png" />
+    <Content Include="imgSp\imgbig15.png" />
+    <Content Include="imgSp\imgbig16.png" />
+    <Content Include="imgSp\imgbig17.png" />
+    <Content Include="imgSp\imgbig18.png" />
+    <Content Include="imgSp\imgbig19.png" />
+    <Content Include="imgSp\imgbig2.png" />
+    <Content Include="imgSp\imgbig20.png" />
+    <Content Include="imgSp\imgbig21.png" />
+    <Content Include="imgSp\imgbig22.png" />
+    <Content Include="imgSp\imgbig3.png" />
+    <Content Include="imgSp\imgbig4.png" />
+    <Content Include="imgSp\imgbig5.png" />
+    <Content Include="imgSp\imgbig6.png" />
+    <Content Include="imgSp\imgbig7.png" />
+    <Content Include="imgSp\imgbig8.png" />
+    <Content Include="imgSp\imgbig9.png" />
+    <Content Include="imgSp\imgsmall1.jpg" />
+    <Content Include="imgSp\imgsmall10.jpg" />
+    <Content Include="imgSp\imgsmall11.jpg" />
+    <Content Include="imgSp\imgsmall12.jpg" />
+    <Content Include="imgSp\imgsmall13.jpg" />
+    <Content Include="imgSp\imgsmall14.jpg" />
+    <Content Include="imgSp\imgsmall15.jpg" />
+    <Content Include="imgSp\imgsmall16.jpg" />
+    <Content Include="imgSp\imgsmall17.jpg" />
+    <Content Include="imgSp\imgsmall18.jpg" />
+    <Content Include="imgSp\imgsmall19.jpg" />
+    <Content Include="imgSp\imgsmall2.jpg" />
+    <Content Include="imgSp\imgsmall20.jpg" />
+    <Content Include="imgSp\imgsmall21.jpg" />
+    <Content Include="imgSp\imgsmall22.jpg" />
+    <Content Include="imgSp\imgsmall3.jpg" />
+    <Content Include="imgSp\imgsmall4.jpg" />
+    <Content Include="imgSp\imgsmall5.jpg" />
+    <Content Include="imgSp\imgsmall6.jpg" />
+    <Content Include="imgSp\imgsmall7.jpg" />
+    <Content Include="imgSp\imgsmall8.jpg" />
+    <Content Include="imgSp\imgsmall9.jpg" />
+    <Content Include="imgSp\light.jpg" />
+    <Content Include="imgSp\moon.jpg" />
+    <Content Include="imgSp\none.jpg" />
+    <Content Include="imgSp\pureSoul.jpg" />
+    <Content Include="imgSp\redSoul.jpg" />
+    <Content Include="imgSp\rollblue.jpg" />
+    <Content Include="imgSp\rollRed.jpg" />
+    <Content Include="imgSp\skin.jpg" />
+    <Content Include="imgSp\trollFace.jpg" />
+    <Content Include="imgSp\water.jpg" />
+    <Content Include="imgSp\wing.jpg" />
+    <Content Include="imgStandard\bg.jpg" />
+    <Content Include="imgStandard\equip.jpg" />
+    <Content Include="imgStandard\equipHover.jpg" />
+    <Content Include="imgStandard\logo.png" />
+    <Content Include="imgStandard\rune.jpg" />
+    <Content Include="imgStandard\runeHover.jpg" />
+    <Content Include="imgStandard\sp.jpg" />
+    <Content Include="imgStandard\spHover.jpg" />
+    <Content Include="index-2.html" />
+    <Content Include="index.html" />
+    <Content Include="jquery-2.1.0.min.js" />
+    <Content Include="lj.js" />
+    <Content Include="numberPlugin.js" />
+    <Content Include="rune.css" />
+    <Content Include="rune.html" />
+    <Content Include="rune.js" />
+    <Content Include="sp.css" />
+    <Content Include="sp.html" />
+    <Content Include="sp.js" />
+    <Content Include="standard.css" />
+    <Content Include="supersized.core.3.2.1.min.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:57111/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

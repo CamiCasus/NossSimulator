@@ -1,0 +1,5 @@
+D:\Documentos\Contenido\Proyectos VS\Proyectos VS2012\NosSimulator\NosSimulator\bin\NosSimulator.dll
+D:\Documentos\Contenido\Proyectos VS\Proyectos VS2012\NosSimulator\NosSimulator\bin\NosSimulator.pdb
+D:\Documentos\Contenido\Proyectos VS\Proyectos VS2012\NosSimulator\NosSimulator\obj\Debug\NosSimulator.dll
+D:\Documentos\Contenido\Proyectos VS\Proyectos VS2012\NosSimulator\NosSimulator\obj\Debug\NosSimulator.pdb
+D:\Documentos\Contenido\Proyectos VS\Proyectos VS2012\NosSimulator\NosSimulator\obj\Debug\NosSimulator.csprojResolveAssemblyReference.cache

@@ -1,0 +1,88 @@
+﻿/*
+	Author : S.Monte aka Oreò
+	 Contact: nossimulator@gmail.com
+ 	  Licenza Creative Commons Attribuzione - Non commerciale - Non opere derivate 3.0 Unported.
+*/
+body { font-size: 14px }
+
+p, h1, h2, h3, h4, h5, h6, b, li, ul {
+    color: #000;
+    font-family: Verdana, Geneva, sans-serif;
+    line-height: 17px;
+    text-align: center;
+}
+
+p { font-size: 1em }
+
+p a, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, b a {
+    color: #111;
+    text-decoration: none
+}
+
+p a:hover, h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, b a:hover { text-decoration: underline }
+
+#wrapper { background-color: rgba(255, 255, 255, 0.8) }
+
+#wrapperLogo {
+    height: 120px;
+    width: 960px
+}
+
+#wrapperLogo img {
+    height: 110px;
+    left: 50%;
+    margin: 10px 0 0 -163px;
+    position: relative;
+    width: 326px;
+}
+
+#wrapperIcone {
+    height: 90px;
+    padding-top: 40px;
+    width: 960px;
+}
+
+#wrapperIcone .smallWrapper {
+    height: 90px;
+    margin-left: 10px;
+    width: 60px;
+}
+
+#wrapperIcone div {
+    height: 60px;
+    width: 60px;
+}
+
+#wrapperIcone .first { margin-left: 380px }
+
+#wrapperIcone a {
+    display: block;
+    line-height: 60px
+}
+
+#spIcona { background-image: url(imgStandard/sp.jpg) }
+
+#equipIcona { background-image: url(imgStandard/equip.jpg) }
+
+#runeIcona { background-image: url(imgStandard/rune.jpg) }
+
+#spIcona a:hover { background-image: url(imgStandard/spHover.jpg) }
+
+#equipIcona a:hover { background-image: url(imgStandard/equipHover.jpg) }
+
+#runeIcona a:hover { background-image: url(imgStandard/runeHover.jpg) }
+
+#wrapperThanks {
+    height: 200px;
+    margin-top: 20px;
+    width: 960px;
+}
+
+#license {
+    height: 100px;
+    margin-top: 30px;
+    text-align: center;
+    width: 960px;
+}
+
+#license img { display: inline-block }

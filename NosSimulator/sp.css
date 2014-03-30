@@ -1,0 +1,452 @@
+﻿@charset "utf-8";
+
+/* LAYOUT STYLE
+	Author : S.Monte
+ 	 Licenza Creative Commons Attribuzione - Non commerciale - Non opere derivate 3.0 Unported.
+*/
+
+/* FONT */
+
+body {
+    font-size: 13px;
+}
+
+p, h1, h2, h3, h4, h5, h6, b {
+    color: #fff;
+    font-family: Verdana, Geneva, sans-serif;
+    line-height: 20px;
+}
+
+p {
+    font-size: 1em;
+    line-height: 20px;
+}
+
+h1 {
+    font-size: 1.5em;
+    line-height: 30px;
+}
+
+h2 {
+    font-size: 1.2em;
+}
+
+/* contenitore del logo */
+
+#wrapperLogo {
+    height: 120px;
+    width: 960px;
+}
+
+    #wrapperLogo img {
+        height: 110px;
+        left: 50%;
+        margin: 10px 0 0 -163px;
+        position: relative;
+        width: 326px;
+    }
+
+/* container tutto tranne logo */
+
+#wrapperBig {
+    display: none;
+    height: 455px;
+    width: 960px;
+}
+
+#wrapperIconeSp {
+    height: 45px;
+    width: 960px;
+}
+
+    #wrapperIconeSp div {
+        height: 40px;
+        margin-left: 3px;
+        text-align: center; /* per centare le img con display inline block */
+        width: 40px;
+    }
+
+    /* al primo div con classe first imposto un margin-left adatto per centrarli tutti */
+
+    #wrapperIconeSp .first {
+        margin-left: 10px;
+    }
+
+    /* imposto la dimensione base delle img */
+
+    #wrapperIconeSp div img {
+        display: inline-block; /* per centrare le img da 42 nei div da 45 */
+        height: 36px;
+        width: 36px;
+    }
+
+/* imposto la classe dei 3 wrapper sinistro, centrale e destro*/
+
+.subWrapper {
+    height: 440px;
+    margin: 10px 0 0 10px;
+}
+
+.subWrapperFirst {
+    margin-left: 20px;
+}
+
+#wrapperSinistro, #wrapperDestro {
+    width: 270px;
+}
+
+#wrapperCentrale {
+    width: 360px;
+}
+
+/* ############################ */
+
+/* contenuto del wrapper sinistro */
+
+#wrapperDescrizione {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    height: 190px;
+    padding: 5px;
+    width: 260px;
+}
+
+    #wrapperDescrizione #descrizione {
+        font-style: italic;
+        height: 170px;
+        width: 260px;
+    }
+
+    #wrapperDescrizione #wrapperRes {
+        height: 20px;
+        width: 260px;
+    }
+
+#wrapperRes .image {
+    height: 20px;
+    margin-left: 5px;
+    width: 20px;
+}
+
+#wrapperRes .text {
+    height: 20px;
+    margin-left: 5px;
+    width: 35px;
+}
+
+#imgBig {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1));
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.1)));
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1));
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    height: 208px;
+    margin-top: 10px;
+    width: 268px;
+}
+
+    #imgBig img {
+        height: 208px;
+        width: 268px;
+    }
+
+/* contenuto del wrapper centrale */
+
+#wrapperIconeUp {
+    height: 74px;
+    width: 360px;
+}
+
+    #wrapperIconeUp div {
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 17px;
+        height: 34px;
+        margin-left: 10px;
+        moz-border-radius: 17px;
+        webkit-border-radius: 17px;
+        width: 34px;
+    }
+
+    #wrapperIconeUp .lower {
+        margin-top: 6px;
+    }
+
+    #wrapperIconeUp .first {
+        margin-left: 5px;
+    }
+
+    #wrapperIconeUp div a {
+        display: block;
+        line-height: 34px;
+    }
+
+        #wrapperIconeUp div a p {
+            line-height: 34px;
+            margin-left: 7px;
+        }
+
+    #wrapperIconeUp .double a p {
+        margin-left: 3px;
+    }
+
+#wrapperMalcom {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    height: 336px;
+    margin-top: 10px;
+    width: 360px;
+}
+
+#wrapperImgSmall {
+    height: 140px;
+    width: 140px;
+}
+
+    #wrapperImgSmall img {
+        height: 42px;
+        margin: 49px;
+        width: 42px;
+    }
+
+#wrapperProb {
+    font-size: 16px;
+    height: 60px;
+    padding: 40px 0 40px 0;
+    width: 220px;
+}
+
+#wrapperMate {
+    height: 70px;
+    width: 360px;
+}
+
+    #wrapperMate p {
+        font-size: 15px;
+    }
+
+    #wrapperMate .wrapperMateSub {
+        height: 120px;
+        width: 90px;
+    }
+
+        #wrapperMate .wrapperMateSub .wrapperMateImg {
+            height: 42px;
+            width: 90px;
+        }
+
+            #wrapperMate .wrapperMateSub .wrapperMateImg img {
+                height: 42px;
+                margin-left: 24px;
+                width: 42px;
+            }
+
+        #wrapperMate .wrapperMateSub .wrapperMateWritten {
+            height: 73px;
+            margin-top: 5px;
+            width: 90px;
+        }
+
+            #wrapperMate .wrapperMateSub .wrapperMateWritten p {
+                text-align: center;
+            }
+
+::-webkit-input-placeholder {
+   text-align:center;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   text-align:center;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   text-align:center;  
+}
+
+:-ms-input-placeholder {  
+   text-align:center; 
+}
+
+#wrapperRoll {
+    height: 50px;
+    text-align: center;
+    width: 360px;
+}
+
+    #wrapperRoll #roll {
+        height: 42px;
+        width: 90px;
+    }
+
+    #wrapperRoll #intentos {
+        height: 42px;
+        width: 270px;
+    }
+
+    #wrapperRoll img {
+        display: inline-block;
+        height: 42px;
+        margin-top: 10px;
+        width: 42px;
+    }
+
+    #wrapperRoll input[type=text] {
+        margin-top: 20px;
+        width: 180px;
+        text-align: right;
+
+
+
+
+        border: 1px solid #ccc;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        -moz-box-shadow: 2px 2px 3px #666;
+        -webkit-box-shadow: 2px 2px 3px #666;
+        box-shadow: 2px 2px 3px #666;
+        font-size: 20px;
+        padding: 4px 7px;
+        outline: 0;
+        -webkit-appearance: none;
+    }
+
+
+        #wrapperRoll input[type=text]:focus {
+            border-color: #339933;
+        }
+
+
+#wrapperUp {
+    height: 60px;
+    margin-top: 20px;
+    width: 360px;
+}
+
+    #wrapperUp #bottonUp {
+        -moz-border-radius: 20px;
+        -webkit-border-radius: 20px;
+        background-color: rgba(80, 120, 240, 0.5);
+        background-image: -moz-linear-gradient(top, rgba(40, 80, 160, 0.5), rgba(80, 120, 240, 0.5));
+        background-image: -moz-linear-gradient(top, rgba(40, 80, 160, 0.5), rgba(80, 120, 240, 0.5));
+        background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(40, 80, 160, 0.5)), to(rgba(80, 120, 240, 0.5)));
+        border: 1px solid #222;
+        border-radius: 20px;
+        height: 50px;
+        margin-left: 55px;
+        width: 250px;
+    }
+
+        #wrapperUp #bottonUp a {
+            display: block;
+        }
+
+            #wrapperUp #bottonUp a p {
+                font-size: 15px;
+                line-height: 50px;
+                text-align: center;
+            }
+
+            #wrapperUp #bottonUp a:hover {
+                -moz-border-radius: 20px;
+                -webkit-border-radius: 20px;
+                background-color: rgba(120, 160, 255, 0.8);
+                background-image: -o-linear-gradient(top, rgba(80, 120, 200, 0.5) 0%, rgba(120, 160, 255, 0.8) 100%);
+                background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(80, 120, 200, 0.5)), to(rgba(120, 160, 255, 0.8)));
+                background-image: -o-linear-gradient(top, rgba(80, 120, 200, 0.5) 0%, rgba(120, 160, 255, 0.8) 100%);
+                border-radius: 20px;
+            }
+
+/* contenuto del wrapper destro */
+
+#statistiche {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    height: 270px;
+    padding: 5px;
+    width: 260px;
+}
+
+#wrapperDestro #statistiche p p {
+    font-size: 16px;
+    font-style: italic;
+    text-align: center;
+}
+
+#gadget {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    height: 130px;
+    margin-top: 10px;
+    width: 270px;
+}
+
+/* ALTRO */
+
+#fullBlock {
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50px;
+    display: none;
+    height: 620px;
+    left: 50%;
+    margin: 5px 0 0 -480px;
+    position: fixed;
+    width: 960px;
+    z-index: 1;
+}
+
+#wrapperLoading {
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 7px;
+    display: none;
+    height: 50px;
+    left: 50%;
+    margin: 440px 0 0 -140px;
+    position: fixed;
+    width: 280px;
+    z-index: 2;
+}
+
+    #wrapperLoading #loading {
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        background: -moz-linear-gradient(100% 100% 180deg, #ff3300, #ffcc00);
+        background: -moz-linear-gradient(100% 100% 180deg, #ff3300, #ffcc00);
+        background-color: #FFA500;
+        border-radius: 5px;
+        height: 40px;
+        margin: 5px 5px;
+        width: 0px;
+    }
+
+#banner {
+    background-color: rgba(20, 150, 20, 0.9);
+    display: none;
+    height: 60px;
+    left: 50%;
+    margin: 100px 0 0 -480px;
+    position: fixed;
+    width: 960px;
+    z-index: 3;
+}
+
+    #banner p {
+        font-size: 20px;
+        line-height: 60px;
+        text-align: center;
+    }
+
+/*---------------------------------------------------------------------------------------------------------------*/

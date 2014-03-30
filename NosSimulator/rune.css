@@ -1,0 +1,269 @@
+﻿@charset "utf-8";
+
+/* LAYOUT STYLE
+	Author : S.Monte aka Oreò
+ 	 Licenza Creative Commons Attribuzione - Non commerciale - Non opere derivate 3.0 Unported.
+*/
+
+/* FONT */
+
+body { font-size: 14px; }
+
+p, h1, h2, h3, h4, h5, h6, b {
+    color: #fff;
+    font-family: Verdana, Geneva, sans-serif;
+    line-height: 20px;
+}
+
+p {
+    font-size: 1em;
+    line-height: 20px;
+}
+
+h1 {
+    font-size: 1.5em;
+    line-height: 30px;
+}
+
+h2 {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+/* contenitore del logo */
+
+#wrapperLogo {
+    height: 77px;
+    width: 960px;
+}
+
+#wrapperLogo img {
+    height: 67px;
+    left: 50%;
+    margin: 10px 0 0 -100px;
+    position: relative;
+    width: 200px;
+}
+
+/* contenitori rune */
+
+.wrapperItem {
+    height: auto;
+    margin: 10px 0 0 30px;
+    width: 240px;
+}
+
+.wrapperItem h2 { color: #111; }
+
+#wrapperItemLeft { margin-left: 75px; }
+
+.wrapperRuna {
+    -moz-border-radius: 5px 5px 5px 40px;
+    -webkit-border-radius: 5px 5px 5px 40px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px 5px 5px 40px;
+    display: none;
+    height: auto;
+    margin-top: 5px;
+    padding: 5px;
+    width: 230px;
+}
+
+#wrapperItemMiddle .wrapperRuna {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#wrapperItemRight .wrapperRuna {
+    -moz-border-radius: 5px 5px 40px 5px;
+    -webkit-border-radius: 5px 5px 40px 5px;
+    border-radius: 5px 5px 40px 5px;
+}
+
+.rarita {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    display: none;
+    height: 35px;
+    width: 240px;
+}
+
+.wrapperRar {
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    height: 30px;
+    margin: 5px 0 0 3px;
+    width: 30px;
+}
+
+.wrapperRar:first-child { margin-left: 5px }
+
+.wrapperRar a {
+    display: block;
+    line-height: 30px;
+}
+
+.wrapperRar a p {
+    margin-top: 4px;
+    text-align: center;
+}
+
+.tipo {
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    height: 30px;
+    margin: 10px 0 0 10px;
+    width: 220px;
+}
+
+.wrapperType {
+    height: 30px;
+    margin-left: 10px;
+    width: 30px;
+}
+
+.wrapperType:first-child { margin-left: 15px; }
+
+.postWrapperType {
+    float: left;
+    height: 30px;
+    overflow: hidden;
+    position: relative;
+    width: 30px;
+}
+
+.postWrapperType img {
+    margin-left: 0px;
+    position: absolute;
+}
+
+.wrapperUp {
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    display: none;
+    height: 30px;
+    margin: 5px 0 0 45px;
+    width: 150px;
+}
+
+.wrapperUp a {
+    display: block;
+    line-height: 30px;
+    text-align: center;
+}
+
+.wrapperUp a p { margin-top: 5px; }
+
+#wrapperItemLeft .wrapperUp:hover, #wrapperItemMiddle .wrapperUp:hover { background-color: red; }
+
+#wrapperItemRight .wrapperUp:hover { background-color: orange; }
+
+/* oscuramento */
+
+#fullBlock {
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50px;
+    display: none;
+    height: 750px;
+    left: 50%;
+    margin: 5px 0 0 -480px;
+    position: fixed;
+    width: 960px;
+    z-index: 1;
+}
+
+.wrapperLoading {
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 7px;
+    display: block;
+    height: 50px;
+    position: fixed;
+    width: 180px;
+    z-index: 2;
+}
+
+.wrapperLoading .loading {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background: -moz-linear-gradient(100% 100% 180deg, #f30, #fc0);
+    background: -moz-linear-gradient(100% 100% 180deg, #f30, #fc0);
+    background-color: #FFA500;
+    border-radius: 5px;
+    height: 40px;
+    margin: 5px 5px;
+    width: 0px;
+}
+
+#wrapperLoading1 {
+    display: none;
+    margin: 380px 0 0 107px;
+}
+
+#wrapperLoading2 {
+    display: none;
+    margin: 380px 0 0 377px;
+}
+
+#wrapperLoading3 {
+    display: none;
+    margin: 380px 0 0 647px;
+}
+
+/* runa */
+
+.wrapperRuna p {
+    font-size: 11px;
+    text-align: center;
+}
+
+.wrapperRuna .titolo { font-size: 13px; }
+
+#wrapperItemRight .wrapperRuna img, #wrapperItemMiddle .wrapperRuna img, #wrapperItemLeft .wrapperRuna img {
+    height: 30px;
+    margin-left: 105px;
+    width: 30px;
+}
+
+.raroColor1 { color: #ccf; }
+
+.raroColor2 { color: #9f9; }
+
+.raroColor3 { color: #9ef; }
+
+.raroColor4 { color: #3f3; }
+
+.raroColor5 { color: #ffc; }
+
+.raroColor6 { color: #fe0; }
+
+.raroColor7 { color: #cf3; }
+
+.costo { color: #f34; }
+
+.effettoRuna { color: #f34; }
+
+.colorEffetto1 { color: #ed0; }
+
+.colorEffetto2 { color: #ff0; }
+
+.colorEffetto3 { color: #9f9; }
+
+.colorEffetto4 { color: #dfa; }
+
+.colorEffetto5 { color: #f79; }
+
+.colorEffetto6 { color: #ccf; }
+
+#wrapper { height: 750px; }

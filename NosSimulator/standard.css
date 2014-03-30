@@ -1,0 +1,116 @@
+/*
+	Author : S.Monte aka Oreò;
+	 Contact: nossimulator@gmail.com
+ 	  Licenza Creative Commons Attribuzione - Non commerciale - Non opere derivate 3.0 Unported.
+*/
+@charset "utf-8";
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline
+}
+
+* { z-index: 0 }
+
+body {
+    background: #fff;
+    height: 100%;
+    line-height: 1
+}
+
+h1, h2, h3, h4, h5, h6 {
+    clear: both;
+    font-weight: normal
+}
+
+ol, ul { list-style: none }
+
+blockquote { quotes: none }
+
+blockquote:before, blockquote:after {
+    content: '';
+    content: none
+}
+
+del { text-decoration: line-through }
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+a img { border: none }
+
+a {
+    border: none;
+    color: #fff;
+    outline: none;
+    text-decoration: none;
+}
+
+div {
+    float: left;
+    position: relative;
+}
+
+#supersized-loader {
+    background: #fff;
+    dex: 0;
+    height: 60px;
+    left: 50%;
+    margin: -30px 0 0 -30px;
+    position: absolute;
+    text-indent: -999em;
+    top: 50%;
+    width: 60px;
+}
+
+#supersized {
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: -999;
+}
+
+#supersized img {
+    border: none;
+    height: 1080px;
+    outline: none;
+    position: relative;
+    width: 1920px;
+}
+
+#supersized a {
+    background: #fff;
+    display: block;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: -30;
+}
+
+#supersized a.image-loading {
+    background: #fff;
+    height: 100%;
+    width: 100%;
+}
+
+#wrapper {
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 50px;
+    height: 620px;
+    left: 50%;
+    margin: 5px 0 0 -480px;
+    width: 960px;
+}
